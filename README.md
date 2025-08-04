@@ -18,6 +18,55 @@ For support and enquiries, please email [nzverifyapp@dia.govt.nz](mailto:nzverif
 -  Future functionality
 
 ## Technical overview
-NZ Verify supports the verification of digital credentials issued in accordance with the [ISO/IEC 18013-5 (mobile driver licence)](https://www.iso.org/standard/69084.html) and [ISO/IEC 23220 (mobile documents)](https://www.iso.org/standard/86782.html) standards. It supports proximity/in-person presentation
+This guidance outlines technical and structural requirements for developers issuing credentials to be used with the NZ Verify app.
+
+NZ Verify accepts only verifiable credentials conforming to [ISO/IEC 18013-5](), the international standard for mobile driving licences (mDLs), and [ISO/IEC 23220](), the internation standard for mobile documents (mDocs), ensuring privacy-preserving and interoperable credential presentations.
+
+Credential issuers must issue credentials, and users must hold and present credentials in apps, that support these standards to ensure successful verification within NZ Verify.
+
+### Device Engagement & Presentation Modes
+In accordance with ISO/IEC 18013-5 (sections referred below) and ISO/IEC 23220-4, NZ Verify supports the following flows:
+-	**Device engagement** (6.3.2.3) is provided via QR code (8.2.2.3) or NFC (8.2.2.1).
+    -	NFC is currently only supported on the Android version of NZ Verify. We expect to support the Apple iOS version in the future.
+-	**Device retrieval** (6.3.2.5) is provided via Bluetooth Low Energy (8.3.3.1.1). 
+    -  NFC (for device retrieval) and Wi-Fi Aware are not supported.
+-	**Server retrieval** (8.3.3.2) is not supported.
+
+### Cryptographic Requirements
+In accordance with ISO/IEC 18013-5 and ISO/IEC 23220, NZ Verify requires:
+-	Issuer-signed Mobile Security Object (MSO) using:
+    -  ECDSA (e.g., secp256r1), or
+    -  EdDSA (e.g., Ed25519) signatures.
+-	Session encryption using ephemeral key exchange for each session.
+-	IACA Certificates must conform to X.509 v3 and include relevant ISO mDL extensions. This can be tested here: [MATTR: X.509 Certificate Formatter & Decoder](https://tools.mattrlabs.com/pem)
+
+### Data Elements and Namespace
+NZ Verify is currently configured to support verification of mobile driver licences and data attributes associated with that namespace (`org.iso.18013.5.1`).
+
+Detail of the current verifier templates, and associated attributes, can be found here: [NZ Verify (Production) - Verifier Templates](TEMPLATES.md)
+
+However, NZ Verify can support *any* namespace or set of attributes including, but not limited to, `org.iso.18013.5.1`, `org.iso.18013.5.1.aamva`, `org.iso.23220.1`, `org.iso.23220.1.jp`, `org.iso.23220.photoID.1`, `eu.europa.ec.eudi.pid.1`, or `org.micov.1`. This can be quickly established for the NZ Verify Test Environment, and will be included in production releases in the future when relevant credentials are in use.
 
 ## Adding support for credentials
+NZ Verify can be enabled to support the verification of credentials that are issued in the ISO/IEC 18013-5/23220 format and are either:
+*  accredited in New Zealand by the [Trust Framework Authority](https://www.dia.govt.nz/trust-framework); or
+*  issued by an overseas authority, or an agent of that authority, authorised to issue a driver licence or permit.[^1]
+
+If you meet this criteria and wish to discuss NZ Verify supporting verification of your credential, please contact us at [nzverifyapp@dia.govt.nz](mailto:nzverifyapp@dia.govt.nz).
+
+[^1]: Refer: [Land Transport (Driver Licensing) Rule 1999](https://www.legislation.govt.nz/regulation/public/1999/0100/latest/DLM281967.html?search=ts_act%40bill%40regulation%40deemedreg_land+transport_resel_25_a&p=1)
+
+## NZ Verify Sandbox
+If your organisation is interested in exploring how NZ Verify can support your development of ISO-compliant digital credentials or holder apps, or if you'd like access to the sandbox environment, we’d love to hear from you. Please contact us at [nzverifyapp@dia.govt.nz](mailto:nzverifyapp@dia.govt.nz) to start a conversation about how we can work together to enable trusted digital services in New Zealand.
+
+### Test Holder/Wallet Apps
+NZ Verify Sandbox has been successfully tested with the following wallet/holder apps for the purpose of testing:
+*  [MATTR GO Hold](https://learn.mattr.global/guides/get-started-go/go-hold/go-hold-example)
+*  [EUDI Android Wallet reference application](https://github.com/eu-digital-identity-wallet/eudi-app-android-wallet-ui)
+*  [Open Wallet Foundation Identity Credential Wallet](https://github.com/openwallet-foundation-labs/identity-credential)
+*  [Multipaz Test App](https://apps.multipaz.org/)
+
+>[!NOTE]
+> NZ Verify will also fully support the upcoming [Government App with digital wallet](https://www.digital.govt.nz/digital-government/programmes-and-projects/government-app-programme).
+
+
