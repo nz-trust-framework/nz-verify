@@ -6,6 +6,11 @@
 
 NZ Verify/Whakatūturu App supports the verification of select international digital credentials issued by trusted authorities – including mobile driver licences. This allows organisations like rental car companies and government agencies to verify eligible credentials in person with ease and accuracy, supporting a secure and seamless experience for individuals and organisations alike. Available now on the Apple App Store and the Google Play Store.
 
+*  [Download on the Apple App Store](https://apps.apple.com/nz/app/nz-verify-whakat%C5%ABturu/id6743457606)
+*  [Get it on Google Play](https://play.google.com/store/apps/details?id=nz.govt.nzverify)
+
+For support and enquiries, please email [nzverifyapp@dia.govt.nz](mailto:nzverifyapp@dia.govt.nz)
+
 ## Contents
 -  Technical overview
 -  Adding support for credentials
