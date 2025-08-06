@@ -71,4 +71,3 @@ NZ Verify Sandbox has been successfully tested with the following wallet/holder 
 ## Future functionality
 NZ Verify will support additional technologies and use cases in the future. This includes:
 *    NFC Device Engagement for Apple iOS
-*    
