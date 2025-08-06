@@ -57,12 +57,14 @@ If you meet this criteria and wish to discuss NZ Verify supporting verification 
 [^1]: Refer: [Land Transport (Driver Licensing) Rule 1999](https://www.legislation.govt.nz/regulation/public/1999/0100/latest/DLM281967.html?search=ts_act%40bill%40regulation%40deemedreg_land+transport_resel_25_a&p=1)
 
 ## Technical guidance for issuers and wallets
-If your organisation is interested in exploring how NZ Verify can support your development of ISO-compliant digital credentials or holder apps, or if you'd like access to the sandbox environment, we’d love to hear from you. Please contact us at [nzverifyapp@dia.govt.nz](mailto:nzverifyapp@dia.govt.nz) to start a conversation about how we can work together to enable trusted digital services in New Zealand.
+If your organisation is interested in exploring how NZ Verify can support your development of ISO-compliant digital credentials or holder apps, or if you'd like access to the sandbox environment, we’d love to hear from you. 
+
+Please contact us at [nzverifyapp@dia.govt.nz](mailto:nzverifyapp@dia.govt.nz) to start a conversation about how we can work together to enable trusted digital services in New Zealand.
 
 The sandbox can be configured to support any technically valid credential (as defined above) and to add new document types or namespaces for other use cases.
 
 ### Test Holder/Wallet Apps
-NZ Verify Sandbox has been successfully tested with the following wallet/holder apps for the purpose of testing:
+NZ Verify Sandbox has been successfully used with the following wallet/holder apps for testing purposes:
 *  [MATTR GO Hold](https://learn.mattr.global/guides/get-started-go/go-hold/go-hold-example)
 *  [EUDI Android Wallet reference application](https://github.com/eu-digital-identity-wallet/eudi-app-android-wallet-ui)
 *  [Open Wallet Foundation Identity Credential Wallet](https://github.com/openwallet-foundation-labs/identity-credential)
@@ -71,3 +73,4 @@ NZ Verify Sandbox has been successfully tested with the following wallet/holder 
 ## Future functionality
 NZ Verify will support additional technologies and use cases in the future. This includes:
 *    NFC Device Engagement for Apple iOS
+*    Alternative Data Elements as proposed in ISO/IEC 18013-5 Second Revision
