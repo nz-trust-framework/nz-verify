@@ -34,11 +34,11 @@ In accordance with ISO/IEC 18013-5 (sections referred below) and ISO/IEC 23220-4
 
 ### Cryptographic Requirements
 In accordance with ISO/IEC 18013-5 and ISO/IEC 23220, NZ Verify requires:
--	Issuer-signed Mobile Security Object (MSO) using:
-    -  ECDSA (e.g., secp256r1), or
-    -  EdDSA (e.g., Ed25519) signatures.
--	Session encryption using ephemeral key exchange for each session.
--	IACA Certificates must conform to X.509 v3 and include relevant ISO mDL extensions. This can be tested here: [MATTR: X.509 Certificate Formatter & Decoder](https://tools.mattrlabs.com/pem)
+-    An issuer-signed Mobile Security Object (MSO) using either:
+        - ECDSA (e.g. secp256r1), or
+        - EdDSA (e.g. Ed25519) signatures.
+ -    Session encryption with a unique ephemeral key exchange for each session.
+ -    IACA certificates conforming to X.509 v3 and including the relevant ISO mDL extensions. These can be tested using the [MATTR: X.509 Certificate Formatter & Decoder](https://tools.mattrlabs.com/pem).
 
 ### Doc Types, Namespaces, and Attributes
 NZ Verify is currently configured to support verification of mobile driver licences (`docType: org.iso.18013.5.1.mDL`) and data attributes associated with that namespace (`org.iso.18013.5.1`).
