@@ -12,10 +12,10 @@ NZ Verify/Whakatūturu App supports the verification of select international dig
 For support and enquiries, please email [nzverifyapp@dia.govt.nz](mailto:nzverifyapp@dia.govt.nz)
 
 ## Contents
--  Technical overview
--  Adding support for credentials
--  Technical guidance for issuers and wallets
--  Future functionality
+-  [Technical overview](#technical-overview)
+-  [Adding support for credentials](#adding-support-for-credentials)
+-  [NZ Verify Sandbox Environment](#nz-verify-sandbox-environment)
+-  [Future functionality](#future-functionality)
 
 ## Technical overview
 This guidance outlines technical and structural requirements for developers issuing credentials to be used with the NZ Verify app.
@@ -56,7 +56,7 @@ If you meet this criteria and wish to discuss NZ Verify supporting verification 
 
 [^1]: Refer: [Land Transport (Driver Licensing) Rule 1999](https://www.legislation.govt.nz/regulation/public/1999/0100/latest/DLM281967.html?search=ts_act%40bill%40regulation%40deemedreg_land+transport_resel_25_a&p=1)
 
-## Technical guidance for issuers and wallets
+## NZ Verify Sandbox Environment
 If your organisation is interested in exploring how NZ Verify can support your development of ISO-compliant digital credentials or holder apps, or if you'd like access to the sandbox environment, we’d love to hear from you. 
 
 Please contact us at [nzverifyapp@dia.govt.nz](mailto:nzverifyapp@dia.govt.nz) to start a conversation about how we can work together to enable trusted digital services in New Zealand.
