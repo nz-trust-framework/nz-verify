@@ -16,6 +16,7 @@ For support and enquiries, please email [nzverifyapp@dia.govt.nz](mailto:nzverif
 -  [Adding support for credentials](#adding-support-for-credentials)
 -  [NZ Verify Sandbox](#nz-verify-sandbox)
 -  [Future functionality](#future-functionality)
+-  [Contributing](#contributing)
 
 ## Technical overview
 This guidance outlines technical and structural requirements for developers issuing credentials to be used with the NZ Verify app.
@@ -78,3 +79,12 @@ NZ Verify Sandbox has been successfully used with the following wallet/holder ap
 NZ Verify will support additional technologies and use cases in the future. This includes:
 *    NFC Device Engagement for Apple iOS
 *    Alternative Data Elements as proposed in ISO/IEC 18013-5 Second Revision
+
+## Contributing
+We encourage feedback from all parties interested in the development of NZ Verify. There are a number of ways to contribute.
+
+**[Issues](../../issues)** can be raised directly through this repository. These should relate to specific or defineable issues.
+
+**[Discussions](../../discussions)** can be raised directly through this respository. These can pose broader questions or open a wider conversation related to New Zealand digital identity ecosystem, but should relate to matters that can be addressed through this document.
+
+Alternatively, you can get in contact with us to provide feedback, thoughts, or questions directly to [nzverifyapp@dia.govt.nz](mailto:nzverifyapp@dia.govt.nz)
