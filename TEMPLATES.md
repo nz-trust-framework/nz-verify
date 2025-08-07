@@ -1,16 +1,63 @@
 # NZ Verify (Production) - Verifier Templates
 
-
-## Data Elements and Namespace
+## Verifier Templates
 NZ Verify is currently configured to support verification of mobile driver licences and data attributes associated with that namespace (org.iso.18013.5.1). These are detailed below:
 
-`
-org.iso.18013.5.1
-*  age_over_18
-`
+**Age Verification (18+)**
+```
+docType:    org.iso.18013.5.1.mDL
+namespace:  org.iso.18013.5.1
+-  portrait
+-  age_over_18
+```
 
+**Age Verification (Date of Birth)**
+```
+docType:    org.iso.18013.5.1.mDL
+namespace:  org.iso.18013.5.1
+-  portrait
+-  birth_date
+```
 
+**Driver Licence**
+```
+docType:    org.iso.18013.5.1.mDL
+namespace:  org.iso.18013.5.1
+-  sex
+-  portrait
+-  birth_date
+-  given_name
+-  family_name
+-  issue_date
+-  expiry_date
+-  issuing_authority
+-  issuing_country
+-  document_number
+-  administrative_number
+-  driving_privileges
+```
 
-Detail of the current verifier templates, and associated attributes, can be found here: NZ Verify (Production) - Verifier Templates
+**Proof of ID (Basic)**
+```
+docType:    org.iso.18013.5.1.mDL
+namespace:  org.iso.18013.5.1
+-  portrait
+-  given_name
+-  family_name
+```
 
-However, NZ Verify can support any namespace or set of attributes including, but not limited to, org.iso.18013.5.1, org.iso.18013.5.1.aamva, org.iso.23220.1, org.iso.23220.1.jp, org.iso.23220.photoID.1, eu.europa.ec.eudi.pid.1, or org.micov.1.
+**Proof of ID (Customer Due Diligence)**
+```
+docType:    org.iso.18013.5.1.mDL
+namespace:  org.iso.18013.5.1
+-  portrait
+-  birth_date
+-  given_name
+-  family_name
+-  resident_address
+-  resident_city
+-  resident_state
+-  restident_postal_code
+-  resident_country
+-  signature_usual_mark
+```
