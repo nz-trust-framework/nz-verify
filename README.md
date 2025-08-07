@@ -14,7 +14,7 @@ For support and enquiries, please email [nzverifyapp@dia.govt.nz](mailto:nzverif
 ## Contents
 -  [Technical overview](#technical-overview)
 -  [Adding support for credentials](#adding-support-for-credentials)
--  [NZ Verify Sandbox Environment](#nz-verify-sandbox-environment)
+-  [NZ Verify Sandbox](#nz-verify-sandbox)
 -  [Future functionality](#future-functionality)
 
 ## Technical overview
@@ -40,12 +40,12 @@ In accordance with ISO/IEC 18013-5 and ISO/IEC 23220, NZ Verify requires:
 -	Session encryption using ephemeral key exchange for each session.
 -	IACA Certificates must conform to X.509 v3 and include relevant ISO mDL extensions. This can be tested here: [MATTR: X.509 Certificate Formatter & Decoder](https://tools.mattrlabs.com/pem)
 
-### Data Elements and Namespace
-NZ Verify is currently configured to support verification of mobile driver licences and data attributes associated with that namespace (`org.iso.18013.5.1`).
+### Doc Types, Namespaces, and Attributes
+NZ Verify is currently configured to support verification of mobile driver licences (`docType: org.iso.18013.5.1.mDL`) and data attributes associated with that namespace (`org.iso.18013.5.1`).
 
 Detail of the current verifier templates, and associated attributes, can be found here: [NZ Verify (Production) - Verifier Templates](TEMPLATES.md)
 
-However, NZ Verify can support *any* namespace or set of attributes including, but not limited to, `org.iso.18013.5.1`, `org.iso.18013.5.1.aamva`, `org.iso.23220.1`, `org.iso.23220.1.jp`, `org.iso.23220.photoID.1`, `eu.europa.ec.eudi.pid.1`, or `org.micov.1`.
+However, NZ Verify can support *any* doctype, namespace or set of attributes including, but not limited to, `org.iso.18013.5.1`, `org.iso.18013.5.1.aamva`, `org.iso.23220.1`, `org.iso.23220.1.jp`, `org.iso.23220.photoID.1`, `eu.europa.ec.eudi.pid.1`, or `org.micov.1`.
 
 ## Adding support for credentials
 NZ Verify can be enabled to support the verification of credentials that are issued in the ISO/IEC 18013-5/23220 format and are either:
@@ -56,12 +56,16 @@ If you meet this criteria and wish to discuss NZ Verify supporting verification 
 
 [^1]: Refer: [Land Transport (Driver Licensing) Rule 1999](https://www.legislation.govt.nz/regulation/public/1999/0100/latest/DLM281967.html?search=ts_act%40bill%40regulation%40deemedreg_land+transport_resel_25_a&p=1)
 
-## NZ Verify Sandbox Environment
+## NZ Verify Sandbox
 If your organisation is interested in exploring how NZ Verify can support your development of ISO-compliant digital credentials or holder apps, or if you'd like access to the sandbox environment, we’d love to hear from you. 
+
+The sandbox can be configured to support any technically valid credential (as defined above) and to add new document types or namespaces for other use cases.
 
 Please contact us at [nzverifyapp@dia.govt.nz](mailto:nzverifyapp@dia.govt.nz) to start a conversation about how we can work together to enable trusted digital services in New Zealand.
 
-The sandbox can be configured to support any technically valid credential (as defined above) and to add new document types or namespaces for other use cases.
+If you are interested in using the NZ Verify Sandbox, please review the [Terms and Conditions of Use](SANDBOX-TERMS.md)
+
+Detail of the current sandbox verifier templates, and associated attributes, can be found here: [NZ Verify (Sandbox) - Verifier Templates](SANDBOX-TEMPLATES.md)
 
 ### Test Holder/Wallet Apps
 NZ Verify Sandbox has been successfully used with the following wallet/holder apps for testing purposes:
