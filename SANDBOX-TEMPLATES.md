@@ -3,6 +3,9 @@
 ## Verifier Templates
 NZ Verify (Sandbox) is currently configured to support a number of test credentials across various namespaces. These are detailed below:
 
+> [!WARNING]
+> The verifier templates below are pending an update in the app. This is expected in the coming days.
+
 **Age 18+ (Mobile Driver Licence)**
 ```
 docType:    org.iso.18013.5.1.mDL
