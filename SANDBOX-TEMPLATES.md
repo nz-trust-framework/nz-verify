@@ -67,7 +67,6 @@ namespace:  nz.govt.dia.bankaccount.test.1
 -  account_name
 -  residential_address
 -  issuer
--  active
 -  issue_date
 -  expiry_date
 ```
