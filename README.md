@@ -70,6 +70,7 @@ Detail of the current sandbox verifier templates, and associated attributes, can
 
 ### Test Holder/Wallet Apps
 NZ Verify Sandbox has been successfully used with the following wallet/holder apps for testing purposes:
+*  [California DMV Wallet](https://www.dmv.ca.gov/portal/ca-dmv-wallet/)
 *  [MATTR GO Hold](https://learn.mattr.global/guides/get-started-go/go-hold/go-hold-example)
 *  [EUDI Android Wallet reference application](https://github.com/eu-digital-identity-wallet/eudi-app-android-wallet-ui)
 *  [Open Wallet Foundation Identity Credential Wallet](https://github.com/openwallet-foundation-labs/identity-credential)
