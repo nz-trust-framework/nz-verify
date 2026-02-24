@@ -27,18 +27,27 @@ Credential issuers must issue credentials, and users must hold and present crede
 
 ### Device Engagement & Presentation Modes
 In accordance with ISO/IEC 18013-5 (sections referred below) and ISO/IEC 23220-4, NZ Verify supports the following flows:
+
 -	**Device engagement** (6.3.2.3) is provided via QR code (8.2.2.3) or NFC (8.2.2.1).
+
     -	NFC is currently only supported on the Android version of NZ Verify. We expect to support the Apple iOS version in the future.
--	**Device retrieval** (6.3.2.5) is provided via Bluetooth Low Energy (8.3.3.1.1). 
+    
+-	**Device retrieval** (6.3.2.5) is provided via Bluetooth Low Energy (8.3.3.1.1).
+  
     -  NFC (for device retrieval) and Wi-Fi Aware are not supported.
+      
 -	**Server retrieval** (8.3.3.2) is not supported.
 
 ### Cryptographic Requirements
 In accordance with ISO/IEC 18013-5 and ISO/IEC 23220, NZ Verify requires:
 -    An issuer-signed Mobile Security Object (MSO) using either:
+  
         - ECDSA (e.g. secp256r1), or
+          
         - EdDSA (e.g. Ed25519) signatures.
+          
  -    Session encryption with a unique ephemeral key exchange for each session.
+   
  -    IACA certificates conforming to X.509 v3 and including the relevant ISO mDL extensions. These can be tested using the [MATTR: X.509 Certificate Formatter & Decoder](https://tools.mattrlabs.com/pem).
 
 ### Doc Types, Namespaces, and Attributes
